@@ -2,13 +2,15 @@ import { TouchableOpacity } from "react-native";
 import { css, styled } from "styled-components/native";
 
 export const Container = styled(TouchableOpacity)`
-    padding: 20px;
+    padding: 26px;
     width: 100%;
+
+    margin-top:35px;
 
     justify-content: center;
     align-items: center;
 
-    background-color: #E5F0DB;
+    background-color: ${({theme}) => theme.COLORS.GREEN_LIGHT};
 `
 
 export const Percent = styled.Text`

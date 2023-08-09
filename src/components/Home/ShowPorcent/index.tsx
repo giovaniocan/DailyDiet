@@ -1,10 +1,18 @@
 import { Container, Percent, PercentText } from "./styles"
 
-export function HomeShowPorcent(){
+import { TouchableOpacityProps } from "react-native";
+
+
+type Props = TouchableOpacityProps & {
+    title: number
+}
+
+
+export function HomeShowPorcent({title, ...rest}:Props){
     return(
-        <Container>
+        <Container {...rest} >
             <Percent>
-                90.86%
+                {title}%
             </Percent>
             <PercentText>
                 das refeições dentro da dieta
