@@ -1,4 +1,4 @@
-import { Container} from "./styled";
+import { Container} from "./styles";
 import LogoImg from '../../../../assets/Logo.png'
 
 import AvatarImg from '../../../../assets/PerfilPhoto.png'
